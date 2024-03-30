@@ -9,11 +9,11 @@ function App() {
     try {
       let response;
       if (lockNumber === 1 && pin === '1234') {
-        response = await fetch('http://10.20.28.135:3000/toggle-lock-1', {
+        response = await fetch('https://10.20.28.135:3000/toggle-lock-1', {
           method: 'POST'
         });
       } else if (lockNumber === 2 && pin2 === '5678') { 
-        response = await fetch('http://10.20.28.135:3000/toggle-lock-2', {
+        response = await fetch('https://10.20.28.135:3000/toggle-lock-2', {
           method: 'POST'
         });
       } else {
